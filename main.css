@@ -44,7 +44,7 @@ header nav ul li:last-child a {
 .container {
     display: flex;
     margin-top: 0;
-    height: 408px;
+    height: 420px;
     border-radius: 0px;
     flex-direction: column;
     margin-bottom: 5px;
@@ -63,6 +63,7 @@ header nav ul li:last-child a {
     width: 175px;
     border-radius: 40%;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
 }
 
@@ -81,7 +82,8 @@ header nav ul li:last-child a {
     font-family: 'Archivo', sans-serif;
     text-align: center;
     padding: 8px;
-    font-size: 20px
+    font-size: 20px;
+    line-height: 29px;
 }
 
 .welcome {
@@ -93,7 +95,7 @@ header nav ul li:last-child a {
 
 .about {
     background-color: #168FD2;
-    height: 400px;
+    height: 450px;
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -105,6 +107,19 @@ header nav ul li:last-child a {
     font-family: 'Archivo', sans-serif;
     padding-top: 45px;
     margin-top: 0;
+}
+
+.about p {
+    text-align: justify;
+    font-family: 'Archivo', sans-serif;
+    padding: 10px;
+    line-height: 23px;
+}
+
+.about ul {
+    font-family: 'Archivo', sans-serif;
+    list-style: none;
+    line-height: 23px;
 }
 
 .about h4 {
@@ -147,6 +162,7 @@ header nav ul li:last-child a {
     border-radius: 4px;
     overflow: hidden;
     height: 200px;
+    font-family: 'Archivo', sans-serif;
 }
 
 .card__description {
@@ -218,5 +234,15 @@ header nav ul li:last-child a {
         padding-top: 20px;
         margin: auto;
 
+    }
+
+    .about p {
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .about ul {
+        text-align: center;
+        font-size: 23px;
     }
 }
