@@ -4,12 +4,7 @@ body {
 
 header {
     background-color: #168FD2;
-    /*margin-bottom: 40px;*/
     position: relative;
-    /*
-    width: 813px;
-    height: 125px;
-    */
 }
 
 header h1 {
@@ -118,6 +113,7 @@ header nav ul li:last-child a {
     color: #C4C4C4;
     font-family: 'Archivo', sans-serif;
     padding-top: 50px;
+    opacity: 50%;
 }
 
 .projects {
@@ -141,7 +137,48 @@ header nav ul li:last-child a {
     width: 200px;
     height: 200px;
     margin-top: 10px;
+    border-radius: 4px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: 135px;
+}
+
+.card__descriptionText {
+    color: #C4C4C4;
+    font-size: 12px;
+    text-align: center;
+    max-width: calc(100% - 30px);
+}
+
+.card_link {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-top: 1px solid #D7DBDD;
+    background-color: #EEF3F5;
+}
+
+.card_link a {
+    text-decoration: none;
+    color: #CAD0D2;
+}
+
 
 
 @media all and (min-width: 600px) {
