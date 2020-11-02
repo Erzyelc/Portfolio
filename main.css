@@ -1,0 +1,185 @@
+body {
+    background-color: #5E5E6E;
+}
+
+header {
+    background-color: #168FD2;
+    /*margin-bottom: 40px;*/
+    position: relative;
+    /*
+    width: 813px;
+    height: 125px;
+    */
+}
+
+header h1 {
+    color: #C4C4C4;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Archivo', sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    width: 51px;
+    height: 49px;
+    left: 576px;
+    top: 37px;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+.container {
+    display: flex;
+    margin-top: 0;
+    height: 408px;
+    border-radius: 0px;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.item {
+    flex: 1;
+    /*height: 100px;*/
+    background-color: #C4C4C4;
+}
+
+
+.photo img {
+    display: block;
+    height: 150px;
+    width: 175px;
+    border-radius: 40%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.dark {
+    background-color: #4062BB;
+}
+
+.dark h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #C4C4C4;
+    font-family: 'Archivo', sans-serif;
+}
+
+.dark p {
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px
+}
+
+.welcome {
+    font-size: 25px;
+    text-align: center;
+    color: #C4C4C4;
+    font-family: 'Archivo', sans-serif;
+}
+
+.about {
+    background-color: #168FD2;
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.about h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #C4C4C4;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 45px;
+    margin-top: 0;
+}
+
+.about h4 {
+    font-size: 12px;
+    text-align: center;
+    color: #C4C4C4;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 50px;
+}
+
+.projects {
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    background: #4062BB;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        margin: 14px 0;
+        padding-top: 0;
+        font-size: 50px;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .dark h2 {
+        font-size: 35px;
+    }
+
+    .photo img {
+        display: block;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        padding-top: 20px;
+        margin: auto;
+
+    }
+}
