@@ -95,7 +95,7 @@ header nav ul li:last-child a {
 
 .about {
     background-color: #168FD2;
-    height: 450px;
+    height: 500px;
     margin-top: 0;
     margin-bottom: 5px;
 }
@@ -195,7 +195,76 @@ header nav ul li:last-child a {
     color: #CAD0D2;
 }
 
+.form-contact {
+    background-color: #CAD0D2;
+    height: 500px;
+}
 
+.form-contact h2 {
+    margin-top: 0;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+    margin: 10px;
+}
+
+.button {
+    background-color: #168FD2;
+    border-radius: 4px;
+    border: none;
+    color: #C4C4C4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+    section {
+        padding: 0 10%;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+
+    main h2 {
+        text-align: center;
+    }
+}
+
+
+form {
+    padding-right: 6px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
+}
 
 @media all and (min-width: 600px) {
     header {
