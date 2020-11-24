@@ -28,7 +28,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li {
     text-decoration: none;
     margin: 0 20px 0 0;
     width: 51px;
@@ -233,6 +233,38 @@ header nav ul li:last-child a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.projectsHeader {
+    text-align: center;
+    color: #C4C4C4;
+}
+
+.stack {
+    text-align: center;
+    color: #C4C4C4;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+footer nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    width: 51px;
+    height: 25px;
+    left: 576px;
+    top: 37px;
 }
 
 /* ---  (Desktop) Groups & Items --- */
