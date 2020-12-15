@@ -155,44 +155,92 @@ header nav ul li:last-child a {
     border-radius: 4px;
 }
 
-.card {
+.projects{
     display: flex;
-    flex-direction: column;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    height: 200px;
-    font-family: 'Archivo', sans-serif;
+    height: 30vw;
 }
 
-.card__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    margin-top: 135px;
+.panel{
+    background-color: #4062BB;
+    height: 40vh;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
 }
 
-.card__descriptionText {
-    color: #C4C4C4;
-    font-size: 12px;
-    text-align: center;
-    max-width: calc(100% - 30px);
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
 }
 
-.card_link {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 5px 15px;
-    border-top: 1px solid #D7DBDD;
-    background-color: #EEF3F5;
+.panel h4 {
+    font-size: 18px;
+    position: absolute;
+    opacity: 0;
+    left: 300px;
 }
 
-.card_link a {
-    text-decoration: none;
-    color: #CAD0D2;
+.panel h5{
+    font-size: 18px;
+    position: absolute;
+    opacity: 0;
+    bottom: 80px;
+    left: 20px;
+}
+
+.panel h6{
+    font-size: 18px;
+    position: absolute;
+    opacity: 0;
+    bottom: 40px;
+    left: 20px;
+}
+
+.panel ul{
+    font-size: 18px;
+    position: absolute;
+    opacity: 0;
+    left: 300px;
+    top: 40px;
+}
+
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+.panel.active h4{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; 
+}
+
+.panel.active h5{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; 
+}
+
+.panel.active h6{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; 
+}
+
+.panel.active ul{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s; 
 }
 
 .form-contact {
